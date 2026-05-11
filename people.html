@@ -14,7 +14,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="culture.html">Культурный код</a></li>
-                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="routes.html">Места</a></li>
                 <li><a href="people.html" class="active">Известные люди</a></li>
                 <li><a href="author.html">Об авторе</a></li>
             </ul>
@@ -28,132 +28,291 @@
 
             <div class="people-grid">
                 <!-- Карточка 1 -->
-                <article class="person-card">
-                    <div class="image-container">
-                        <img src="images/rubcov.jpg" alt="Николай Рубцов">
+                <article class="gallery-item"> <div class="image-container">
+                        <img src="images/rubcov.jpg" alt="Николай Рубцов" style="object-position: 50% -80px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Николай Рубцов</h3>
                         <span class="vocation">Поэт</span>
-                        <p>Тонкий лирик, чьи стихи стали душой северной деревни. Его поэзия наполнена искренностью и глубокой любовью к «тихой родине».</p>
-                        <a href="https://ru.wikipedia.org/wiki/Рубцов,_Николай_Михайлович" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Тонкий лирик, чьи стихи стали душой северной деревни. Его поэзия наполнена искренностью и любовью.</p>
+
+                        <input type="checkbox" id="person-1" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Николай Михайлович родился в Архангельской области, но именно Вологодчина стала его творческой родиной. Здесь он написал свои самые знаменитые сборники «Звезда полей» и «Душа хранит».</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Рубцов,_Николай_Михайлович" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-1" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 2 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/vereshchagin.jpg" alt="Василий Верещагин">
+                        <img src="images/vereshchagin.jpg" alt="Василий Верещагин" style="object-position: 50% -60px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Василий Верещагин</h3>
                         <span class="vocation">Художник</span>
+                        
                         <p>Уроженец Череповца, ставший величайшим баталистом мира. Он изображал войну не ради славы, а ради мира.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Верещагин,_Василий_Васильевич" target="_blank" class="more-btn">Подробнее</a>
+
+                        <input type="checkbox" id="person-2" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Василий Васильевич прославился своими масштабными сериями картин о Туркестане и Балканах. Его самая известная работа «Апофеоз войны» является мощным протестом против вооруженных конфликтов.</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Верещагин,_Василий_Васильевич" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-2" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 3 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/Ilyushin.jpg" alt="Сергей Ильюшин">
+                        <img src="images/Ilyushin.jpg" alt="Сергей Ильюшин" style="object-position: 50% -20px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Сергей Ильюшин</h3>
                         <span class="vocation">Авиаконструктор</span>
+                        
                         <p>Выдающийся инженер, создавший легендарные самолеты. Его штурмовик Ил-2 стал самым массовым боевым самолетом в истории.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Ильюшин,_Сергей_Владимирович" target="_blank" class="more-btn">Подробнее</a>
+
+                        <input type="checkbox" id="person-3" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Трижды Герой Социалистического Труда. Под его руководством были созданы не только военные машины, но и пассажирские самолеты серии «Ил», которые десятилетиями были основой советской авиации.</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Ильюшин,_Сергей_Владимирович" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-3" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 4 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/belov.jpg" alt="Василий Белов">
+                        <img src="images/belov.jpg" alt="Василий Белов" style="object-position: 50% -90px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Василий Белов</h3>
                         <span class="vocation">Писатель</span>
-                        <p>Один из крупнейших мастеров «деревенской прозы». Его произведения «Привычное дело» и «Лад» стали классикой, описывающей быт и мудрость северного крестьянства.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Белов,_Василий_Иванович" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Один из крупнейших мастеров «деревенской прозы». Его произведения «Привычное дело» и «Лад» стали классикой северного крестьянства.</p>
+
+                        <input type="checkbox" id="person-4" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Василий Иванович почти всю жизнь прожил в Вологде. Его книга «Лад» считается настоящей энциклопедией народной жизни, где он воспел традиционный уклад, ремесла и красоту северного говора.</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Белов,_Василий_Иванович" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-4" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 5 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/belyaev.jpg" alt="Павел Беляев">
+                        <img src="images/belyaev.jpg" alt="Павел Беляев" style="object-position: 50% -30px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Павел Беляев</h3>
                         <span class="vocation">Летчик-космонавт</span>
-                        <p>Герой Советского Союза, командир космического корабля «Восход-2». Под его руководством был осуществлен первый в истории выход человека в открытый космос.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Беляев,_Павел_Иванович" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Герой Советского Союза, командир корабля «Восход-2». Под его руководством был совершен первый в истории выход человека в открытый космос.</p>
+
+                        <input type="checkbox" id="person-5" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Уроженец Бабушкинского района Вологодской области. Во время исторического полета, когда автоматика отказала, он впервые в мире перешел на ручное управление, чтобы благополучно посадить корабль в тайге.</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Беляев,_Павел_Иванович" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-5" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 6 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/batyushkov.jpg" alt="Константин Батюшков">
+                        <img src="images/batyushkov.jpg" alt="Константин Батюшков" style="object-position: 50% -70px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Константин Батюшков</h3>
                         <span class="vocation">Поэт</span>
-                        <p>Выдающийся поэт начала XIX века, чьё творчество оказало огромное влияние на молодого Пушкина. Последние годы жизни провел в Вологде, став частью её культурного кода.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Батюшков,_Константин_Николаевич" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Выдающийся поэт начала XIX века, чьё творчество оказало огромное влияние на молодого Пушкина. Последние годы жизни провел в Вологде.</p>
+
+                        <input type="checkbox" id="person-6" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Батюшков реформировал русский стихотворный язык, сделав его более гибким и музыкальным. В Вологде на Кремлевской площади ему установлен знаменитый памятник, у которого всегда лежат цветы в день его рождения.</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Батюшков,_Константин_Николаевич" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-6" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 7 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/n_vereshchagin.jpg" alt="Николай Верещагин">
+                        <img src="images/n_vereshchagin.jpg" alt="Николай Верещагин" style="object-position: 50% -60px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Николай Верещагин</h3>
                         <span class="vocation">Общественный деятель</span>
-                        <p>Создатель индустрии молочного хозяйства в России. Именно он разработал метод получения масла с уникальным «ореховым» вкусом, которое сегодня известно всему миру как Вологодское.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Верещагин,_Николай_Васильевич" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Создатель индустрии молочного хозяйства в России. Именно он разработал метод получения знаменитого масла с «ореховым» вкусом.</p>
+
+                        <input type="checkbox" id="person-7" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Старший брат художника Василия Верещагина. Он не только создал рецепт «Парижского» (ныне Вологодского) масла, но и организовал первые в стране молочные артели и школы маслоделия, совершив настоящую аграрную революцию.</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Верещагин,_Николай_Васильевич" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-7" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 8 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/gavrilin.jpg" alt="Валерий Гаврилин">
+                        <img src="images/gavrilin.jpg" alt="Валерий Гаврилин" style="object-position: 50% -40px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Валерий Гаврилин</h3>
                         <span class="vocation">Композитор</span>
-                        <p>Народный артист РСФСР, чье творчество стало музыкальным символом Вологодчины. Его произведения глубоко национальны и пронизаны интонациями русской народной песни.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Гаврилин,_Валерий_Александрович" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Народный артист РСФСР, чье творчество стало музыкальным символом Вологодчины. Его произведения пронизаны интонациями русской народной песни.</p>
+
+                        <input type="checkbox" id="person-8" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Автор знаменитой хоровой симфонии-действа «Перезвоны». В Вологде регулярно проходит международный музыкальный Гаврилинский фестиваль, а его имя носит Вологодская филармония.</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Гаврилин,_Валерий_Александрович" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-8" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 9 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
                         <img src="images/korbakov.jpg" alt="Владимир Корбаков">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Владимир Корбаков</h3>
                         <span class="vocation">Художник</span>
-                        <p>Выдающийся живописец и график, мастер портрета и пейзажа. Его творчество пронизано жизнеутверждающей силой, а работы хранятся в крупнейших музеях России, включая Третьяковскую галерею.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Корбаков,_Владимир_Николаевич" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Выдающийся живописец, мастер портрета и пейзажа. Его творчество пронизано жизнеутверждающей силой, а работы хранятся в Третьяковской галерее.</p>
+
+                        <input type="checkbox" id="person-9" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Народный художник России и участник Великой Отечественной войны. Он создал уникальную серию из более чем 100 автопортретов. В Вологде работает его музейно-творческий центр «Дом Корбакова».</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Корбаков,_Владимир_Николаевич" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-9" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
 
                 <!-- Карточка 10 -->
-                <article class="person-card">
+                <article class="gallery-item">
                     <div class="image-container">
-                        <img src="images/kluev.jpg" alt="Николай Клюев">
+                        <img src="images/kluev.jpg" alt="Николай Клюев" style="object-position: 50% -90px;">
                     </div>
-                    <div class="person-info">
+
+                    <div class="gallery-caption">
                         <h3>Николай Клюев</h3>
                         <span class="vocation">Поэт</span>
-                        <p>Самобытный поэт, «песнопевец» северного крестьянства. Его творчество — это удивительный синтез народной культуры, глубокой духовности и дохристианских мифов северной земли.</p>
-                        <a href="https://ru.wikipedia.org/wiki/Клюев,_Николай_Алексеевич" target="_blank" class="more-btn">Подробнее</a>
+                        
+                        <p>Самобытный поэт, «песнопевец» северного крестьянства. Его творчество — это синтез народной культуры, духовности и мифов северной земли.</p>
+
+                        <input type="checkbox" id="person-10" class="expand-input">
+
+                        <div class="extra-content">
+                            <p>Уроженец Олонецкой губернии (ныне Вытегорский район). Клюев создал «избяной космос» в русской литературе. Его стихи повлияли на Сергея Есенина, который считал Клюева своим учителем и «нежным братом».</p>
+                            
+                            <a href="https://ru.wikipedia.org/wiki/Клюев,_Николай_Алексеевич" target="_blank" class="wiki-link">
+                                Подробнее на Вики
+                            </a>
+                        </div>
+
+                        <label for="person-10" class="expand-button">
+                            <span class="btn-text"></span>
+                            <span class="btn-arrow">▼</span>
+                        </label>
                     </div>
                 </article>
             </div>

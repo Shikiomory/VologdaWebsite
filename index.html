@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вологодская область - Главная</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
 
@@ -14,7 +16,7 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Главная</a></li>
                 <li><a href="culture.html">Культурный код</a></li>
-                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="routes.html">Места</a></li>
                 <li><a href="people.html">Известные люди</a></li>
                 <li><a href="author.html">Об авторе</a></li>
             </ul>
@@ -58,6 +60,14 @@
                 </div>
             </div>
         </section>
+
+<section class="map-section">
+    <div class="content-section">
+        <h2>Вологодская область на карте</h2>
+        <div id="map" style="height: 500px; border-radius: 12px; border: 1px solid #ddd;"></div>
+    </div>
+</section>
+</section>
     </main>
 
     <a href="#" class="scroll-up">&#8593;</a>
@@ -103,6 +113,39 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/109133656" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <script>
+    // Инициализация карты с центром в Вологде
+    var map = L.map('map').setView([59.5, 40.0], 6);
+
+    // Подключаем слой карты (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Загружаем границы Вологодской области (GeoJSON)
+    // Используем проверенный источник границ регионов РФ
+    fetch('https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/russia.geojson')
+        .then(response => response.json())
+        .then(data => {
+            // Фильтруем данные, чтобы оставить только Вологодскую область
+            var vologdaRegion = data.features.find(feature => 
+                feature.properties.name === "Вологодская область" || 
+                feature.properties.cartodb_id === 24 // ID может меняться, но обычно name работает
+            );
+
+            if (vologdaRegion) {
+                L.geoJSON(vologdaRegion, {
+                    style: {
+                        color: "#2980b9",      // Цвет границы
+                        weight: 3,             // Толщина
+                        fillColor: "#3498db",  // Цвет заливки
+                        fillOpacity: 0.2       // Прозрачность
+                    }
+                }).addTo(map);
+            }
+        });
+</script>
 </body>
 </html>
 
